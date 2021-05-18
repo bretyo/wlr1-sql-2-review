@@ -43,3 +43,5 @@ app.get('/api/movies', movieCtrl.getMovies)
 
 // FAVORITE ENDPOINTS
 app.get('/api/favorites', favCtrl.getFavorites)
+app.post('/api/favorites/:movie_id', favCtrl.addFavorite)
+app.delete('/api/favorites/:favorite_movie_id', favCtrl.deleteFavorite)
